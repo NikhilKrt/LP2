@@ -1,0 +1,493 @@
+html {
+	width: 100%;
+	font-size: 10px;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+.subscription {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	font-size: 2rem;
+}
+
+.subscription .head {
+	padding-bottom:  25px;
+}
+
+.subscription .heading {
+	padding: 0 0 25px;
+}
+.brands {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.brand .img {
+	max-width: 120px;
+	height: 128px;
+}
+
+.reviews {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	font-size: 2rem;
+	grid-row-gap: 15px;
+}
+
+.review {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 1fr;
+}
+
+.review:first-child .pic {
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.about {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	font-size: 2rem;
+}
+
+.ebook{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	font-size: 2rem;
+}
+
+.services {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 40px;
+	font-size: 2rem;
+}
+
+.services .types{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-row-gap: 30px;
+}
+
+.services .type {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+}
+
+.link {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 30px 15px;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.blogs {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	grid-row-gap: 40px;
+	font-size: 2rem;
+}
+
+.blogs .contentL {
+	grid-row-gap: 40px;
+}
+
+.blog .header {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+}
+
+.blog {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-row-gap: 10px;
+	padding: 0 15px;
+}
+
+.blog .author {
+	grid-column: 1 /span 2;
+}
+
+.blog .time {
+	border-radius: 5px;
+	width: 60px;
+	height: 40px;
+	font-weight: 800;
+}
+
+.blog .img {
+	border-radius: 6px;
+}
+
+.blog .author, .blog .text, .blog .title, .blog .more {
+	text-align: left
+}
+
+.help {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto;
+	font-size: 2rem;
+	grid-row-gap: 30px
+}
+
+.help .contact {
+	display: grid;
+	grid-template-columns:  1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.call-me {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.email-me {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 30px;
+	font-family: 1ref;
+	background-color: #525e6c;
+	padding: 60px 0;
+}
+
+.footer .social {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.head {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	grid-row-gap: 25px;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 15px;
+	padding: 0 15px 10px 15px;
+}
+
+
+.formL {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-row-gap: 15px;
+	padding: 0 15px;
+}
+
+
+.contentS {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+}
+
+.contentL {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+}
+
+.brands {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.button {
+	border: none;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.input {
+	width: 100%;
+	border: none;
+	height: 50px;
+	border-radius: 3px;
+}
+
+.container {
+	padding: 120px 0px;
+}
+
+.brands .img {
+	width: 50%;
+}
+
+.img {
+	width: 100%;
+}
+
+.hidden-img {
+	display: none;
+}
+
+.reviews .img {
+	border-radius: 50%;
+	max-width: 120px;
+	max-height: 120px;
+	padding: 4px;
+}
+
+
+.review .text p:first-child {
+	padding: 15px 0;
+}
+
+.link .btn2{
+	border: 2px solid white;
+	border-radius: 3px;
+	font-weight: 800;
+}
+
+.about .heading {
+	font-weight: 800;
+	padding: 0 0 25px;
+}
+
+.about .subHeading {
+	padding: 0 0 25px;
+}
+
+.about .text {
+	padding: 40px 15px;
+}
+
+.ebook .head {
+	padding: 0 15px 25px 15px;
+}
+
+.services .img {
+	max-width: 130px;
+	max-height: 130px;
+}
+
+.contact .img {
+	border-radius: 50%;
+	max-width: 130px;
+	max-height: 130px;
+}
+
+
+
+.__paddingS{
+	padding: 0 15px;
+}
+
+.__fGrey {
+	color: #69696E;
+}
+
+.__fOrange {
+	color: #ef7c46;
+}
+
+.__fBlue {
+	color: #439FE0;
+}
+
+.__bgGrey {
+	background-color: #EFF1F4;
+}
+
+.__bgOrange {
+	background-color: #ef7c46;
+}
+
+.__bgBlue {
+	background-color: #439FE0;
+}
+
+.__fWhite {
+	color: #fff;
+}
+
+.__font108 {
+	font-size: 1.8em;
+}
+
+.__font105 {
+	font-size: 1.5em
+}
+
+.__font1036 {
+	font-size: 1.36em;
+}
+
+.__font105 {
+	font-size: 1.5em;
+}
+
+.__font09 {
+	font-size: 0.9em;
+}
+
+.__font08{
+	font-size: 0.8em;
+}
+
+.__font2 {
+	font-size: 2em;
+}
+
+.__font07 {
+	font-size: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+	.subscription {
+		padding: 120px 120px;
+	}
+
+	.subscription .form {
+		padding-left: 30px;
+		padding-right: 30px; 
+	}
+
+	.brands {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.brand:last-child {
+		grid-column: 2;
+	}
+
+	.__paddingS{
+	padding: 0 30px;
+	}
+
+	.link {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about {
+		padding-left: 15px; 
+		padding-right: 15px; 
+	}
+
+	.about .contentL {
+		grid-row-gap: 15px;
+	}
+
+	.services .types{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;		
+	}
+
+	.services .type {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.blogs .contentL {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.formL {
+		padding-left: 50px;
+		padding-right: 50px; 
+	}
+
+	.help .contact {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.footer  {
+		grid-template-rows: 1fr;
+		grid-template-columns: 2fr 1fr;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.hidden-img{
+		display: grid;
+	}
+
+	.subscription {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto  ;
+		padding-bottom: 0;
+	}
+
+	.brands {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.brand:last-child{
+		grid-row: 1;
+		grid-column: 4;
+	}
+
+	.review{
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.review:first-child .pic{
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	.about .contentL {
+		grid-template-rows: auto 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about .contentL .image:first-child {
+		grid-row: 1 / span 2;
+	}
+
+	.ebook {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.help .content{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+
