@@ -8,7 +8,7 @@ html {
 .subscription {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto ;
 	font-size: 2rem;
 }
 
@@ -36,6 +36,10 @@ html {
 	grid-template-rows: auto auto;
 	font-size: 2rem;
 	grid-row-gap: 15px;
+}
+
+.reviews .contentS {
+	grid-gap: 50px;
 }
 
 .review {
@@ -69,6 +73,7 @@ html {
 	grid-template-columns: 1fr;
 	grid-row-gap: 40px;
 	font-size: 2rem;
+	color: #69696E;
 }
 
 .services .types{
@@ -82,6 +87,7 @@ html {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto auto;
+	padding-bottom:30px; 
 }
 
 .link {
@@ -90,7 +96,10 @@ html {
 	grid-template-rows: 1fr 1fr;
 	padding: 30px 15px;
 	font-size: 2rem;
-	font-weight: 800;
+}
+
+.link-head {
+	align-self: center;
 }
 
 .blogs {
@@ -99,6 +108,7 @@ html {
 	grid-template-rows: auto auto;
 	grid-row-gap: 40px;
 	font-size: 2rem;
+	color: #69696E;
 }
 
 .blogs .contentL {
@@ -117,7 +127,7 @@ html {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto auto auto;
-	grid-row-gap: 10px;
+	grid-row-gap: 15px;
 	padding: 0 15px;
 }
 
@@ -126,10 +136,13 @@ html {
 }
 
 .blog .time {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
 	border-radius: 5px;
 	width: 60px;
-	height: 40px;
-	font-weight: 800;
+	height: 50px;
+	align-items: center;
 }
 
 .blog .img {
@@ -143,7 +156,7 @@ html {
 .help {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto auto;
+	grid-template-rows: auto auto;
 	font-size: 2rem;
 	grid-row-gap: 30px
 }
@@ -151,7 +164,19 @@ html {
 .help .contact {
 	display: grid;
 	grid-template-columns:  1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+}
+
+.help .text {
+	display: grid;
+	grid-auto-columns: 1fr; 
+	grid-row: auto auto;
+	grid-row-gap: 30px;
+	padding: 30px 15px;
+}
+
+.help .subHeading {
+	padding-top: 30px;
 }
 
 .call-me {
@@ -180,6 +205,7 @@ html {
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
+	padding: 10px 90px;
 }
 
 
@@ -193,9 +219,9 @@ html {
 .form {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
 	grid-row-gap: 15px;
-	padding: 0 15px 10px 15px;
+	padding: 0 15px 15px 15px;
 }
 
 
@@ -204,7 +230,7 @@ html {
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	grid-row-gap: 15px;
-	padding: 0 15px;
+	padding: 0 30px;
 }
 
 
@@ -231,6 +257,8 @@ html {
 	border: none;
 	border-radius: 3px;
 	text-transform: uppercase;
+	line-height: 50px;
+	box-shadow: 0 4px 0 #c76f45;
 }
 
 .input {
@@ -238,6 +266,13 @@ html {
 	border: none;
 	height: 50px;
 	border-radius: 3px;
+	line-height: 35px
+	font-weight: 700;
+	text-indent:20px;
+}
+
+.inputs {
+	padding: 10px;
 }
 
 .container {
@@ -260,27 +295,43 @@ html {
 	border-radius: 50%;
 	max-width: 120px;
 	max-height: 120px;
-	padding: 4px;
+	padding: 2px;
+	border: 3px solid white;
 }
 
+.reviews .heading {
+	padding: 0 15px;
+} 
+
+.reviews .subHeading {
+	padding: 0 10px;
+} 
 
 .review .text p:first-child {
-	padding: 15px 0;
+	padding: 15px 15px;
+	color: #69696E;
+	z-index: 0.8
+}
+
+.reviews .name {
+	color: #69696E;
 }
 
 .link .btn2{
+	display: grid;
 	border: 2px solid white;
 	border-radius: 3px;
-	font-weight: 800;
+	padding : 10px 30px;
 }
 
 .about .heading {
-	font-weight: 800;
 	padding: 0 0 25px;
+	color: #69696E;
 }
 
 .about .subHeading {
 	padding: 0 0 25px;
+	color: #69696E;
 }
 
 .about .text {
@@ -289,6 +340,14 @@ html {
 
 .ebook .head {
 	padding: 0 15px 25px 15px;
+}
+
+.ebook .heading {
+	padding-bottom: 15px;
+}
+
+.ebook .form-head {
+	padding: 15px 30px 30px 30px;
 }
 
 .services .img {
@@ -303,6 +362,9 @@ html {
 }
 
 
+.__fweight {
+	font-weight: 900;
+}
 
 .__paddingS{
 	padding: 0 15px;
@@ -370,7 +432,7 @@ html {
 
 @media screen and (min-width: 768px) {
 	.subscription {
-		padding: 120px 120px;
+		padding: 120px 110px;
 	}
 
 	.subscription .form {
@@ -387,70 +449,99 @@ html {
 		grid-column: 2;
 	}
 
-	.__paddingS{
-	padding: 0 30px;
+	.about .head {
+		padding: 0 30px;
 	}
+
 
 	.link {
 		grid-template-rows: 1fr;
-		grid-template-columns: 1fr 1fr;
-	}
+		grid-template-columns: auto auto;
+		font-size: 2rem;
+		align-self: end;
 
-	.about {
-		padding-left: 15px; 
-		padding-right: 15px; 
 	}
-
-	.about .contentL {
-		grid-row-gap: 15px;
+	.services {
+		padding: 120px 15px; 
 	}
 
 	.services .types{
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;		
+		grid-template-rows: 1fr 1fr;	
+		text-align: left;	
+		grid-gap: 30px;
 	}
 
 	.services .type {
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 2fr;
+		grid-gap: 20px;
+	}
+
+	.services .subHeading {
+		padding-bottom: 10px;
+	}
+
+	.ebook .head {
+		padding: 0 80px;
 	}
 
 	.blogs .contentL {
 		grid-template-rows: 1fr;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: auto auto auto;
 	}
 
-	.formL {
-		padding-left: 50px;
-		padding-right: 50px; 
-	}
 
 	.help .contact {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
+		padding-bottom: 15px;
 	}
 
 	.footer  {
 		grid-template-rows: 1fr;
 		grid-template-columns: 2fr 1fr;
 	}
-
 }
 
 @media screen and (min-width: 992px) {
-	.hidden-img{
-		display: grid;
-	}
 
 	.subscription {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto  ;
 		padding-bottom: 0;
+		text-align: left;
+		padding-bottom: 20px 20px 0 20px;
+	}
+
+	.subscription .form{
+		grid-template-rows: auto auto;
+		grid-template-columns: auto auto;
+		grid-gap: 3px; 
+	}
+
+	.subscription .button {
+		grid-column: 1 / span 2;
+
+	}
+
+	.subscription .inputs {
+		padding: 0;
+	}
+
+	.subscription .form {
+		padding: 0;
+	}
+
+	.subscription .content {
+		padding: 20px 10px 30px 40px;
+		word-spacing: 5px;
 	}
 
 	.brands {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
+		padding: 30px 120px;
 	}
 
 	.brand:last-child{
@@ -458,14 +549,41 @@ html {
 		grid-column: 4;
 	}
 
+
 	.review{
 		grid-template-columns: 1fr 2fr 1fr;
 		grid-template-rows: 1fr;
 	}
 
+
+	.ebook p {
+		text-align: left;
+	}
+
+	.review .text p:first-child {
+		padding: 0 0 15px 0;
+	}
+
+
 	.review:first-child .pic{
 		grid-column: 3;
 		grid-row: 1;
+	}
+
+	.review p {
+		text-align: left;
+	}
+
+	.review .hidden {
+		justify-self: center;
+	}
+
+	.link {
+		padding: 80px 90px;
+	}
+
+	.link-head {
+		padding-right: 25px;
 	}
 
 	.about .contentL {
@@ -473,19 +591,140 @@ html {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.about .contentL .image:first-child {
-		grid-row: 1 / span 2;
+	.about .head {
+		padding: 30px 200px;
 	}
 
+	.about .head {
+		padding: 30px 200px;
+	}
+ 
 	.ebook {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
+	}
+
+	.blogs {
+		padding: 120px 40px;
+	}
+
+	.blogs .header {
+		grid-row-gap: 0;
+	}
+
+	.about .subHeading {
+	    padding: 0 80px;
+	}
+
+	.about .subText {
+		text-align: left;
+	}
+
+	.about .contentL .image:first-child {
+		grid-row: 1 / span 2;
 	}
 
 	.help .content{
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.help .text{
+		text-align: left;
+	}
+
+	.help .head {
+		padding: 15px 250px;
+	}
+
+	.help .text {
+		padding: 30px 0;
+	}
+
+	.blog .author {
+		padding-left: 70px
+	}
+
+	.hidden-img{
+		display: grid;
+	}
+
+	.link .btn2{
+		padding: 15px;
+		border: 3px solid white;
+	}
+
+	.__Lpadding2{
+		padding: 120px 90px;
+	}
+
+	.__LpaddingS {
+		padding: 20px 0 0 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	.brands{
+		padding: 30px 250px;
+	}
+
+	.inputs {
+		padding: 3px;
+	}
+
+	.link {
+		padding: 30px 350px;
+	}
+
+	.about {
+		grid-gap: 10px;
+	}
+	.about .contentL {
+		grid-gap: 20px;
+	}
+
+	.about .contentL .image .img:first-child{
+		height: 100%;
+	}
+
+	.about .text {
+		padding: 80px 40px;
+	}
+
+	.services .subHeading {
+		padding-bottom: 10px;
+	}
+
+
+	.formL {
+		padding-left: 50px;
+		padding-right: 50px; 
+	}
+
+	.__Dpadding {
+		padding: 120px 100px;
+	}
+
+	.__Dpadding2 {
+		padding: 120px 200px;
+	}
+
+	.__Dfont{
+		font-size: 1em;
+	}
+
+	.__Dfont105{
+		font-size: 1.5em;
+	}
+
+	.__Dfont2{
+		font-size: 2em;
+	}
+
+	.__Dfont205{
+		font-size: 2.5em;
 	}
 
 }
